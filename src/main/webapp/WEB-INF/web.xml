@@ -10,4 +10,18 @@
 		<exception-type>java.lang.Exception</exception-type>
 		<location>/Error.jsp</location>
 	</error-page>
+	
+	<welcome-file-list>
+    <welcome-file>user-list.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <!-- <servlet>
+		<servlet-name>servletName</servlet-name>
+		<servlet-class>net.javaguides.usermanagement.web.UserServlet</servlet-class>
+	</servlet>
+ 
+	<servlet-mapping>
+		<servlet-name>servletName</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping> -->
 </web-app>

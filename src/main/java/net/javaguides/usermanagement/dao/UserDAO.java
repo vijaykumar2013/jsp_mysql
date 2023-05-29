@@ -106,6 +106,7 @@ public class UserDAO {
 				String name = rs.getString("name");
 				String email = rs.getString("email");
 				String country = rs.getString("country");
+				System.out.println("name:" + name + " email:"+email);
 				users.add(new User(id, name, email, country));
 			}
 		} catch (SQLException e) {

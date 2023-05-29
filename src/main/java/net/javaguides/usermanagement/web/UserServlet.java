@@ -69,6 +69,7 @@ public class UserServlet extends HttpServlet {
 			throws SQLException, IOException, ServletException {
 		List<User> listUser = userDAO.selectAllUsers();
 		request.setAttribute("listUser", listUser);
+		System.out.println("listUser" + listUser.size());
 		RequestDispatcher dispatcher = request.getRequestDispatcher("user-list.jsp");
 		dispatcher.forward(request, response);
 	}
